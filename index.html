@@ -15,64 +15,133 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-						<a href="#work2" class="icon solid fa-folder"><span>Work2</span></a>
-						<a href="#work3" class="icon solid fa-folder"><span>Work3</span></a>
-						<!--a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Line&Scatter</span></a>
+						<a href="#work2" class="icon solid fa-folder"><span>Bar Chart</span></a>
+						<a href="#work3" class="icon solid fa-folder"><span>Pie Chart</span></a>
+						<!--a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a-->
+						<!--a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a-->
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
 						<!-- Me -->
-							<article id="home" class="panel intro">
-								<header>
-									<h1>陳恩佳</h1>
-									<p>111408503</p>
-								</header>
-								<a href="#work" class="jumplink pic">
-									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
-								</a>
-							</article>
+						<article id="home" class="panel intro">
+							<header>
+								<h1>陳恩佳 111408503</h1>
+								<p>資料視覺化期中作業</p>
+								<p>1. Line & Scatter Chart</p>
+								<p>2. Bar Chart</p>
+								<p>3. Pie Chart</p>
+							</header>
+							<a href="#work" class="jumplink pic">
+								<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+								<img src="images/me.jpg" alt="" />
+							</a>
+						</article>
 
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<h2>Work</h2>
+									<h2>Line & Scatter Chart</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									<h3>背景簡介</h3>
+									本圖以折線圖呈現新竹市在民國109-111年各月份一般旅館客房住用數的變化，
+									資料取自政府資料開放平台的「新竹市旅宿業住宿率」，
+									網址連結: https://data.gov.tw/dataset/85964
 								</p><div id="myGraph"></div>
+								
+									<h3>製作方法說明</h3>
+									首先，我分別輸入民國109-111年每個月一般旅館客房住用數的數值，
+									接著將圖表類型設定為折線圖，並透過迴圈的方式將1-12月的數值添入圖表的x、y軸
+									（月份為x軸，客房住用數為y軸），
+									最後，再於圖表左上方添加年分選擇鍵，使其成為互動式圖表，
+									可以選擇看109年、110年、111年、所有年份的客房住用數。
+								<p>
+									<h3>洞悉</h3>
+									民國109年年初，新冠肺炎入侵台灣，導致觀光業大受打擊，
+									我們可以看到新竹市一般旅館的客房住用數大幅下滑
+									，並且在四月來到最低點（24380個住用數）；幾個月後，由於台灣疫情沒有持續擴張，加上政府實施防疫鬆綁政策，
+									使得住宿率逐漸起色，並且在十月來到最高點（54020個住用數）。
+									然而，好景不常，民國110年四月底，本土疫情出現大規模爆發，五月中全台進入三級警戒，
+									新竹市的客房住用數因而急遽下跌，並且在六月來到最低點（21699個住用數），
+									後來隨著疫苗開打，疫情逐漸趨緩，並且恢復至二級警戒，使得住用數逐漸回升。
+									我們可以看到在民國111年，新竹市的一般旅館的客房住用數相較前兩年來得多。
+									
+
 							</article>
 						
 						<!-- Work2 -->
 						<article id="work2" class="panel">
 							<header>
-								<h2>Work2</h2>
+								<h2>Bar Chart</h2>
 							</header>
 							<p>
-								Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-								luctus elit eget interdum.
+								<h3>背景簡介</h3>
+								本圖以累積長條圖呈現民國112年7-9月桃園機場捷運重點站的平均日運量，
+								資料取自政府資料開放平台的「各站運量統計表」，
+								網址連結: https://data.gov.tw/dataset/164957
 							</p><div id="myGraph2"></div>
+							<p>
+								<h3>製作方法說明</h3>
+								首先，我以桃園捷運七個重點捷運站為類別，
+								各輸入民國112年7-9月平均日流量的數值作為資料庫，
+								接著將圖表類型設定為長條圖，並且以月份作為類別，
+								分別輸入七個捷運站站名（設為x軸），以及平均日流量數值（設為y軸），
+								再進一步將流量數值顯示在圖表上。
+								最後，再將直條圖設為堆疊模式，使其成為堆疊直條圖。
+							<p>
+								<h3>洞悉</h3>
+								從本圖中，我們可以看出民國112年7-9月桃園機場捷運重點站中，
+								平均日流量最高的捷運站為「A18高鐵桃園站」，
+								其中在8月的平均日流量突破一萬人次；
+								流量其次高的捷運站為「A12機場第一航廈站」，
+								7-9月的平均日流量皆超過9000人次；
+								流量第三名的捷運站則為「A8長庚醫院站」。
+								此外，我們亦可從此圖觀察到，民國112年8-9月的平均日流量比7月要來得高，
+								由此可知，民國112年於暑假期間出國的人數可能比上課日來得多。
+
+								
 								
 							</article>
 
 						<!-- Work3 -->
 						<article id="work3" class="panel">
 							<header>
-								<h2>Work3</h2>
+								<h2>Pie Chart</h2>
 							</header>
 							<p>
-								Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-								Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-								luctus elit eget interdum.
+								<h3>背景簡介</h3>
+								本圖呈現桃園市於民國96年、101年、106年、
+								111年按性別與三階段年齡別（性別、幼年、老年、青壯年）作為分類的人口比率，
+								資料取自政府資料開放平台的「桃園市人口比率按三階段年齡別分」，
+								網址連結: https://data.gov.tw/dataset/148198
 							</p><div id="myGraph3"></div>
 								
+							<h3>製作方法說明</h3>
+							首先，我分別輸入民國96年、101年、106年、
+							111年桃園市性別及三階段年齡別的人口比率統計數值作為資料庫，
+							接著將圖表類型設定為圓餅圖，以年份為類別，
+							透過迴圈的方式依序將三階段年齡別、人口比率數值添入圖表，
+							並且進一步設立座標，
+							將四個年份的圖表設置於四個不同位置，
+							最後，再於圓餅圖中間加上白色圓圈，呈現出各圖所代表的年份。
+						<p>
+							<h3>洞悉</h3>
+							首先，在桃園市三階段年齡的分布上，我們可以看出青壯年的人口比率變化並不明顯，
+							而隨著少子化時代來臨，幼年人口比率逐漸下降，
+							民國96年時幼年人口比率為20.37%（男生10.5%+女生9.87%），
+							到了民國111年則降至14.02%（男生7.36%+女生6.66%）；
+							相對的，老年人口比率則呈現逐漸上升的趨勢，
+							民國96年時老年人口比率為7.92%（男生4.19%+女生3.73%），
+							到了民國111年則上升至14.27%（男生6.55%+女生7.72%），
+							15年內老年人口比率成長了將近2倍，可以看出高齡化問題越來越嚴重。
+						    再來，在性別的分布上，我們可以看到幼年人口的男性比率始終高於女性，
+							可以推測傳統的生男觀念依舊存在；
+							而老年人口比率方面，雖然男性人口比率在民國96年時較女性來得高，
+							但是其餘三個年份皆以女性占比較大，且兩者差距逐漸提升，
+							由此可知，目前老年女性的平均壽命可能較男性高。
 							</article>
 
 						<!-- Contact -->

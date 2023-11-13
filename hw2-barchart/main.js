@@ -1,30 +1,30 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph2 = document.getElementById('myGraph2');
 
-let trace1 ={};
-trace1.type ="bar";
-trace1.name = "七月";
-trace1.x = [];
-trace1.y = [];
+let ace1 ={};
+ace1.type ="bar";
+ace1.name = "七月";
+ace1.x = [];
+ace1.y = [];
 
-trace1.x[0]= "A2三重站"
-trace1.y[0]= A2[0]['count'];
-trace1.x[1]= "A3新北產業園區站"
-trace1.y[1]= A3[0]['count'];
-trace1.x[2]= "A8長庚醫院站"
-trace1.y[2]= A8[0]['count'];
-trace1.x[3]= "A9林口站"
-trace1.y[3]= A9[0]['count'];
-trace1.x[4]= "A12機場第一航廈站"
-trace1.y[4]= A12[0]['count'];
-trace1.x[5]= "A13機場第二航廈站"
-trace1.y[5]= A13[0]['count'];
-trace1.x[6]= "A18高鐵桃園站"
-trace1.y[6]= A18[0]['count'];
+ace1.x[0]= "A2三重站"
+ace1.y[0]= A2[0]['count'];
+ace1.x[1]= "A3新北產業園區站"
+ace1.y[1]= A3[0]['count'];
+ace1.x[2]= "A8長庚醫院站"
+ace1.y[2]= A8[0]['count'];
+ace1.x[3]= "A9林口站"
+ace1.y[3]= A9[0]['count'];
+ace1.x[4]= "A12機場第一航廈站"
+ace1.y[4]= A12[0]['count'];
+ace1.x[5]= "A13機場第二航廈站"
+ace1.y[5]= A13[0]['count'];
+ace1.x[6]= "A18高鐵桃園站"
+ace1.y[6]= A18[0]['count'];
 
-trace1.text = trace1.y;
-trace1.textfont = {
+ace1.text = ace1.y;
+ace1.textfont = {
     color:'white',
-    size: 20
+    size: 15
 };
 
 //for(let i=0;i<animals_Taipei_Zoo.length;i++){
@@ -32,78 +32,78 @@ trace1.textfont = {
 //    trace1.y[i] = animals_Taipei_Zoo[i]['count'];
 //}
 
-let trace2 ={};
-trace2.type ="bar";
-trace2.name = "八月";
-trace2.x = [];
-trace2.y = [];
+let ace2 ={};
+ace2.type ="bar";
+ace2.name = "八月";
+ace2.x = [];
+ace2.y = [];
 
-trace1.x[0]= "A2三重站"
-trace1.y[0]= A2[1]['count'];
-trace1.x[1]= "A3新北產業園區站"
-trace1.y[1]= A3[1]['count'];
-trace1.x[2]= "A8長庚醫院站"
-trace1.y[2]= A8[1]['count'];
-trace1.x[3]= "A9林口站"
-trace1.y[3]= A9[1]['count'];
-trace1.x[4]= "A12機場第一航廈站"
-trace1.y[4]= A12[1]['count'];
-trace1.x[5]= "A13機場第二航廈站"
-trace1.y[5]= A13[1]['count'];
-trace1.x[6]= "A18高鐵桃園站"
-trace1.y[6]= A18[1]['count'];
+ace2.x[0]= "A2三重站"
+ace2.y[0]= A2[1]['count'];
+ace2.x[1]= "A3新北產業園區站"
+ace2.y[1]= A3[1]['count'];
+ace2.x[2]= "A8長庚醫院站"
+ace2.y[2]= A8[1]['count'];
+ace2.x[3]= "A9林口站"
+ace2.y[3]= A9[1]['count'];
+ace2.x[4]= "A12機場第一航廈站"
+ace2.y[4]= A12[1]['count'];
+ace2.x[5]= "A13機場第二航廈站"
+ace2.y[5]= A13[1]['count'];
+ace2.x[6]= "A18高鐵桃園站"
+ace2.y[6]= A18[1]['count'];
 
-trace2.text = trace2.y;
-trace2.textfont = {
+ace2.text = ace2.y;
+ace2.textfont = {
     color:'white',
-    size: 20
+    size: 15
 };
 //for(let i=0;i<animals_Taoyuan_Zoo.length;i++){
 //    trace2.x[i] = animals_Taoyuan_Zoo[i]['name'];
 //    trace2.y[i] = animals_Taoyuan_Zoo[i]['count'];
 //}
 
-let trace3 ={};
-trace3.type ="bar";
-trace3.name = "九月";
-trace3.x = [];
-trace3.y = [];
+let ace3 ={};
+ace3.type ="bar";
+ace3.name = "九月";
+ace3.x = [];
+ace3.y = [];
 
-trace1.x[0]= "A2三重站"
-trace1.y[0]= A2[2]['count'];
-trace1.x[1]= "A3新北產業園區站"
-trace1.y[1]= A3[2]['count'];
-trace1.x[2]= "A8長庚醫院站"
-trace1.y[2]= A8[2]['count'];
-trace1.x[3]= "A9林口站"
-trace1.y[3]= A9[2]['count'];
-trace1.x[4]= "A12機場第一航廈站"
-trace1.y[4]= A12[2]['count'];
-trace1.x[5]= "A13機場第二航廈站"
-trace1.y[5]= A13[2]['count'];
-trace1.x[6]= "A18高鐵桃園站"
-trace1.y[6]= A18[2]['count'];
+ace3.x[0]= "A2三重站"
+ace3.y[0]= A2[2]['count'];
+ace3.x[1]= "A3新北產業園區站"
+ace3.y[1]= A3[2]['count'];
+ace3.x[2]= "A8長庚醫院站"
+ace3.y[2]= A8[2]['count'];
+ace3.x[3]= "A9林口站"
+ace3.y[3]= A9[2]['count'];
+ace3.x[4]= "A12機場第一航廈站"
+ace3.y[4]= A12[2]['count'];
+ace3.x[5]= "A13機場第二航廈站"
+ace3.y[5]= A13[2]['count'];
+ace3.x[6]= "A18高鐵桃園站"
+ace3.y[6]= A18[2]['count'];
 
-trace3.text = trace3.y;
-trace3.textfont = {
+ace3.text = ace3.y;
+ace3.textfont = {
     color:'white',
-    size: 20
+    size: 15
 };
 //for(let i=0;i<animals_Taoyuan_Zoo.length;i++){
 //    trace3.x[i] = animals_Taoyuan_Zoo[i]['name'];
 //    trace3.y[i] = animals_Taoyuan_Zoo[i]['count'];
 //}
 
-let data = [];
-data.push(trace1);
-data.push(trace2);
-data.push(trace3);
+let data2 = [];
+data2.push(ace1);
+data2.push(ace2);
+data2.push(ace3);
 
-let layout = {
+let layout2 = {
     margin:{
         t:50
     },
     barmode: 'stack',
-    title:'112年7-9月桃園機場捷運重點站流量統計累積長條圖'
+    title:'112年7-9月桃園機場捷運重點站平均日運量累積長條圖'
 };
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph2, data2, layout2);

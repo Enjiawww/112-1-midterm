@@ -1,84 +1,86 @@
-let myGraph = document.getElementById('myGraph');
+let myGraph3 = document.getElementById('myGraph3');
 
-let trace1  ={};
-trace1.type ="pie";
-trace1.title = "民國96年"
-trace1.labels = [];
-trace1.values = [];
-trace1.domain = {
+let race1  ={};
+race1.type ="pie";
+race1.title = "民國96年"
+race1.labels = [];
+race1.values = [];
+race1.domain = {
     row:0,
     column:0
 };
-trace1.hole =0.5;
+race1.hole =0.5;
 
 for(let x=0; x<evaluation_ratio_96.length; x++){
-    trace1.labels[x] = evaluation_ratio_96[x]['name'];
-    trace1.values[x] = evaluation_ratio_96[x]['count'];
+    race1.labels[x] = evaluation_ratio_96[x]['name'];
+    race1.values[x] = evaluation_ratio_96[x]['count'];
 }
 
-let trace2  ={};
-trace2.type ="pie";
-trace2.title = "民國101年"
-trace2.labels = [];
-trace2.values = [];
-trace2.domain = {
+let race2  ={};
+race2.type ="pie";
+race2.title = "民國101年"
+race2.labels = [];
+race2.values = [];
+race2.domain = {
     row:0,
     column:1
 };
-trace2.hole =0.5;
+race2.hole =0.5;
 
 for(let x=0; x<evaluation_ratio_101.length; x++){
-    trace2.labels[x] = evaluation_ratio_101[x]['name'];
-    trace2.values[x] = evaluation_ratio_101[x]['count'];
+    race2.labels[x] = evaluation_ratio_101[x]['name'];
+    race2.values[x] = evaluation_ratio_101[x]['count'];
 }
 
-let trace3  ={};
-trace3.type ="pie";
-trace3.title = "民國106年"
-trace3.labels = [];
-trace3.values = [];
-trace3.domain = {
+let race3  ={};
+race3.type ="pie";
+race3.title = "民國106年"
+race3.labels = [];
+race3.values = [];
+race3.domain = {
     row:1,
     column:0
 };
-trace3.hole =0.5;
+race3.hole =0.5;
 
 for(let x=0; x<evaluation_ratio_106.length; x++){
-    trace3.labels[x] = evaluation_ratio_106[x]['name'];
-    trace3.values[x] = evaluation_ratio_106[x]['count'];
+    race3.labels[x] = evaluation_ratio_106[x]['name'];
+    race3.values[x] = evaluation_ratio_106[x]['count'];
 }
 
-let trace4  ={};
-trace4.type ="pie";
-trace4.title = "民國111年"
-trace4.labels = [];
-trace4.values = [];
-trace4.domain = {
+let race4  ={};
+race4.type ="pie";
+race4.title = "民國111年"
+race4.labels = [];
+race4.values = [];
+race4.domain = {
     row:1,
     column:1
 };
-trace4.hole =0.5;
+race4.hole =0.5;
 
 for(let x=0; x<evaluation_ratio_111.length; x++){
-    trace4.labels[x] = evaluation_ratio_111[x]['name'];
-    trace4.values[x] = evaluation_ratio_111[x]['count'];
+    race4.labels[x] = evaluation_ratio_111[x]['name'];
+    race4.values[x] = evaluation_ratio_111[x]['count'];
 }
 
 
-let data = [];
-data.push(trace1);
-data.push(trace2);
-data.push(trace3);
-data.push(trace4);
+let data3 = [];
+data3.push(race1);
+data3.push(race2);
+data3.push(race3);
+data3.push(race4);
 
-let layout = {
+let layout3 = {
     margin:{
         t:50,
         l:0,
     },
     grid:{
         rows:2,
-        columns:2
-    }
+        columns:2,
+    },
+    title:'桃園市人口比率圓餅圖(按性別與三階段年齡別分)'
+
 };
-Plotly.newPlot(myGraph, data, layout);
+Plotly.newPlot(myGraph3, data3, layout3);
